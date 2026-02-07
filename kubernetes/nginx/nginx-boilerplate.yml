@@ -3,12 +3,9 @@ kind: Pod
 metadata:
   labels:
     run: nginx
-  name: nginx
+    method: fromcode
+  name: nginx-yaml
 spec:
   containers:
   - image: nginx
     name: nginx
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
